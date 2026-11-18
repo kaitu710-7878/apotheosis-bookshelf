@@ -1,5 +1,6 @@
 package dev.apotheosis_bookshelf.mixin;
 
+import dev.apotheosis_bookshelf.util.AnvilEnchantingContext;
 import dev.shadowsoffire.apotheosis.ench.EnchModule;
 import dev.shadowsoffire.apotheosis.ench.EnchantmentInfo;
 import dev.shadowsoffire.apotheosis.ench.table.RealEnchantmentHelper;

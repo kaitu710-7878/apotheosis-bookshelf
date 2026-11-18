@@ -1,5 +1,13 @@
 # Changelog / 変更履歴
 
+## [1.0.2-alpha] - 2026-11-18
+
+### English
+- Moved `AnvilEnchantingContext` out of the `mixin` package into `dev.apotheosis_bookshelf.util` to fix `IllegalClassLoadError` when Mixin-transformed classes reference it.
+
+### 日本語
+- Mixin 適用クラスからの直接参照による `IllegalClassLoadError` を修正するため、`AnvilEnchantingContext` を `dev.apotheosis_bookshelf.util` パッケージへ移動。
+
 ## [1.0.1-alpha] - 2026-11-18
 
 ### English

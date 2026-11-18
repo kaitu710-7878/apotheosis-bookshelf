@@ -1,4 +1,4 @@
-package dev.apotheosis_bookshelf.mixin;
+package dev.apotheosis_bookshelf.util;
 
 /**
  * ThreadLocal context tracking whether the Enchanting Table is currently operating

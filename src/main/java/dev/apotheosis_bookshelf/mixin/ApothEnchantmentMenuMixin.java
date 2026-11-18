@@ -1,6 +1,7 @@
 package dev.apotheosis_bookshelf.mixin;
 
 import dev.apotheosis_bookshelf.block.AnvilBookshelfBlock;
+import dev.apotheosis_bookshelf.util.AnvilEnchantingContext;
 import dev.shadowsoffire.apotheosis.ench.table.ApothEnchantmentMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.item.ItemStack;
