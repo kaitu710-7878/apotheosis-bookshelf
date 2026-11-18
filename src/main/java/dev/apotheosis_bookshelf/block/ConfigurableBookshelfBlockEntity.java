@@ -23,7 +23,7 @@ import org.jetbrains.annotations.Nullable;
  */
 public class ConfigurableBookshelfBlockEntity extends BlockEntity implements MenuProvider {
     public static final int MIN_VALUE = 1;
-    public static final int MAX_VALUE = 50;
+    public static final int DEFAULT_MAX_VALUE = 50;
     public static final String TAG_VALUE = "Value";
 
     private int value = 1;
@@ -32,12 +32,19 @@ public class ConfigurableBookshelfBlockEntity extends BlockEntity implements Men
         super(ModBlockEntities.CONFIGURABLE_BOOKSHELF.get(), pos, state);
     }
 
+    public int getMaxValue() {
+        if (getBlockState().getBlock() instanceof ConfigurableBookshelfBlock bookshelf) {
+            return bookshelf.getStatType().getMaxValue();
+        }
+        return DEFAULT_MAX_VALUE;
+    }
+
     public int getValue() {
         return value;
     }
 
     public void setValue(int newValue) {
-        int clamped = Mth.clamp(newValue, MIN_VALUE, MAX_VALUE);
+        int clamped = Mth.clamp(newValue, MIN_VALUE, getMaxValue());
         if (this.value != clamped) {
             this.value = clamped;
             setChanged();
@@ -58,7 +65,7 @@ public class ConfigurableBookshelfBlockEntity extends BlockEntity implements Men
     public void load(CompoundTag tag) {
         super.load(tag);
         if (tag.contains(TAG_VALUE)) {
-            value = Mth.clamp(tag.getInt(TAG_VALUE), MIN_VALUE, MAX_VALUE);
+            value = Mth.clamp(tag.getInt(TAG_VALUE), MIN_VALUE, getMaxValue());
         }
     }
 

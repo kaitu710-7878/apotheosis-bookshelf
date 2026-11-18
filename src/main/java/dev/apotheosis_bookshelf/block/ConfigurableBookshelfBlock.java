@@ -95,7 +95,7 @@ public class ConfigurableBookshelfBlock extends Block implements EntityBlock, IE
             value = beTag.getInt(ConfigurableBookshelfBlockEntity.TAG_VALUE);
         }
         tooltip.add(Component.translatable("tooltip.apotheosis_bookshelf.configurable_stat",
-                Component.translatable(statType.getTranslationKey()), value).withStyle(ChatFormatting.AQUA));
+                Component.translatable(statType.getTranslationKey()), value, statType.getMaxValue()).withStyle(ChatFormatting.AQUA));
         if (statType == BookshelfStatType.ETERNA) {
             tooltip.add(Component.translatable("tooltip.apotheosis_bookshelf.eterna_cap").withStyle(ChatFormatting.GRAY));
         }

@@ -42,9 +42,7 @@ public class SetBookshelfValuePacket {
             }
             if (player.level().isLoaded(msg.pos)
                     && player.level().getBlockEntity(msg.pos) instanceof ConfigurableBookshelfBlockEntity be) {
-                be.setValue(Mth.clamp(msg.value,
-                        ConfigurableBookshelfBlockEntity.MIN_VALUE,
-                        ConfigurableBookshelfBlockEntity.MAX_VALUE));
+                be.setValue(msg.value);
             }
         });
         ctx.setPacketHandled(true);

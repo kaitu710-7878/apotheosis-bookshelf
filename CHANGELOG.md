@@ -1,5 +1,15 @@
 # Changelog / 変更履歴
 
+## [1.0.3-alpha] - 2026-11-18
+
+### English
+- Increased the maximum configurable value of Quanta Bookshelf and Arcana Bookshelf from `50` to `100` (Eterna Bookshelf remains `50`).
+- Fixed slider dragging in the bookshelf configuration GUI so the bar follows mouse movement while holding down left-click.
+
+### 日本語
+- クアンタ本棚とアルカナ本棚の設定上限を `50` から `100` に引き上げました（エテルナ本棚の上限は `50` のまま）。
+- 本棚設定GUIのスライダーについて、左クリックを押しながらマウスを動かしてバーを操作できるよう修正しました。
+
 ## [1.0.2-alpha] - 2026-11-18
 
 ### English

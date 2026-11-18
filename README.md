@@ -12,10 +12,10 @@
 **Apotheosis Bookshelf** is a Minecraft 1.20.1 (Forge) addon for **Apotheosis** that adds configurable enchanting bookshelves, Treasure/Anvil bookshelves, and Primal crafting materials.
 
 ### Features
-- **Configurable Bookshelves (1 - 50)**:
+- **Configurable Bookshelves**:
   - **Eterna Bookshelf**: Sets Eterna contribution from `1` to `50` via right-click GUI (Max Eterna cap: `50`).
-  - **Quanta Bookshelf**: Sets Quanta contribution from `1` to `50` via right-click GUI.
-  - **Arcana Bookshelf**: Sets Arcana contribution from `1` to `50` via right-click GUI.
+  - **Quanta Bookshelf**: Sets Quanta contribution from `1` to `100` via right-click GUI.
+  - **Arcana Bookshelf**: Sets Arcana contribution from `1` to `100` via right-click GUI.
 - **Special Bookshelves**:
   - **Treasure Bookshelf**: Enables treasure enchantments on the Enchanting Table while blocking curses (configurable).
   - **Anvil Bookshelf**: Enables all anvil-applicable enchantments on the Enchanting Table while blocking curses (configurable).
@@ -42,10 +42,10 @@
 **Apotheosis Bookshelf** は、Minecraft 1.20.1 (Forge) 向けの **Apotheosis** アドオンMODです。数値を指定できる本棚や、お宝・金床本棚、原初のレシピ素材を追加します。
 
 ### 主な特徴
-- **パラメーター指定本棚（1〜50）**:
+- **パラメーター指定本棚**:
   - **エテルナ本棚**: 右クリックGUIでエテルナ値を `1`〜`50` に設定可能（上限 `50`）。
-  - **クアンタ本棚**: 右クリックGUIでクアンタ値を `1`〜`50` に設定可能。
-  - **アルカナ本棚**: 右クリックGUIでアルカナ値を `1`〜`50` に設定可能。
+  - **クアンタ本棚**: 右クリックGUIでクアンタ値を `1`〜`100` に設定可能。
+  - **アルカナ本棚**: 右クリックGUIでアルカナ値を `1`〜`100` に設定可能。
 - **特殊本棚**:
   - **お宝本棚**: エンチャントテーブルでお宝エンチャントも付与可能にする（呪いはつかない／コンフィグで切替可）。
   - **金床本棚**: エンチャントテーブルで金床（鉄床）で付与可能なエンチャントすべてを付与可能にする（呪いはつかない／コンフィグで切替可）。

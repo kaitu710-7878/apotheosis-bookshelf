@@ -14,7 +14,7 @@
   "stat.apotheosis_bookshelf.quanta": "Quanta",
   "stat.apotheosis_bookshelf.arcana": "Arcana",
 
-  "tooltip.apotheosis_bookshelf.configurable_stat": "%s: %s (Range: 1 - 50)",
+  "tooltip.apotheosis_bookshelf.configurable_stat": "%s: %s (Range: 1 - %s)",
   "tooltip.apotheosis_bookshelf.eterna_cap": "Max Eterna Cap: 50",
   "tooltip.apotheosis_bookshelf.right_click_config": "Right-click block to configure value",
   "tooltip.apotheosis_bookshelf.treasure_shelf": "Allows treasure enchantments on the Enchanting Table",

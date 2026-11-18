@@ -15,9 +15,10 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraftforge.client.gui.widget.ForgeSlider;
 
 /**
- * Configuration screen for setting a bookshelf's stat value from 1 to 50.
+ * Configuration screen for setting a bookshelf's stat value (1-50 for Eterna, 1-100 for Quanta/Arcana).
  */
 public class BookshelfConfigScreen extends AbstractContainerScreen<BookshelfConfigMenu> {
+    private final int maxValue;
     private int currentValue;
     private ForgeSlider slider;
     private EditBox inputBox;
@@ -25,9 +26,10 @@ public class BookshelfConfigScreen extends AbstractContainerScreen<BookshelfConf
 
     public BookshelfConfigScreen(BookshelfConfigMenu menu, Inventory playerInventory, Component title) {
         super(menu, playerInventory, title);
+        this.maxValue = menu.getStatType().getMaxValue();
         this.currentValue = Mth.clamp(menu.getInitialValue(),
                 ConfigurableBookshelfBlockEntity.MIN_VALUE,
-                ConfigurableBookshelfBlockEntity.MAX_VALUE);
+                this.maxValue);
         this.imageWidth = 220;
         this.imageHeight = 132;
     }
@@ -43,7 +45,7 @@ public class BookshelfConfigScreen extends AbstractContainerScreen<BookshelfConf
                 Component.translatable(menu.getStatType().getTranslationKey()).append(": "),
                 Component.empty(),
                 ConfigurableBookshelfBlockEntity.MIN_VALUE,
-                ConfigurableBookshelfBlockEntity.MAX_VALUE,
+                this.maxValue,
                 currentValue,
                 1.0, 0, true) {
             @Override
@@ -62,7 +64,7 @@ public class BookshelfConfigScreen extends AbstractContainerScreen<BookshelfConf
                 .bounds(left + 52, top + 62, 28, 20).build());
 
         this.inputBox = new EditBox(this.font, left + 86, top + 62, 48, 20, Component.empty());
-        this.inputBox.setMaxLength(2);
+        this.inputBox.setMaxLength(3);
         this.inputBox.setFilter(s -> s.isEmpty() || s.chars().allMatch(Character::isDigit));
         this.inputBox.setValue(String.valueOf(currentValue));
         this.inputBox.setResponder(text -> {
@@ -73,7 +75,7 @@ public class BookshelfConfigScreen extends AbstractContainerScreen<BookshelfConf
                 int parsed = Integer.parseInt(text);
                 int clamped = Mth.clamp(parsed,
                         ConfigurableBookshelfBlockEntity.MIN_VALUE,
-                        ConfigurableBookshelfBlockEntity.MAX_VALUE);
+                        this.maxValue);
                 setValueAndSync(clamped, false);
             } catch (NumberFormatException ignored) {
             }
@@ -96,7 +98,7 @@ public class BookshelfConfigScreen extends AbstractContainerScreen<BookshelfConf
     private void setValueAndSync(int newValue, boolean updateInputBox) {
         int clamped = Mth.clamp(newValue,
                 ConfigurableBookshelfBlockEntity.MIN_VALUE,
-                ConfigurableBookshelfBlockEntity.MAX_VALUE);
+                this.maxValue);
         this.currentValue = clamped;
 
         this.updatingFromWidget = true;
@@ -112,6 +114,27 @@ public class BookshelfConfigScreen extends AbstractContainerScreen<BookshelfConf
     }
 
     @Override
+    public boolean mouseDragged(double mouseX, double mouseY, int button, double dragX, double dragY) {
+        if (this.getFocused() != null && this.isDragging() && button == 0) {
+            if (this.getFocused().mouseDragged(mouseX, mouseY, button, dragX, dragY)) {
+                return true;
+            }
+        }
+        return super.mouseDragged(mouseX, mouseY, button, dragX, dragY);
+    }
+
+    @Override
+    public boolean mouseReleased(double mouseX, double mouseY, int button) {
+        if (this.isDragging() && this.getFocused() != null) {
+            this.setDragging(false);
+            if (this.getFocused().mouseReleased(mouseX, mouseY, button)) {
+                return true;
+            }
+        }
+        return super.mouseReleased(mouseX, mouseY, button);
+    }
+
+    @Override
     public void render(GuiGraphics graphics, int mouseX, int mouseY, float partialTick) {
         this.renderBackground(graphics);
         super.render(graphics, mouseX, mouseY, partialTick);
@@ -122,7 +145,6 @@ public class BookshelfConfigScreen extends AbstractContainerScreen<BookshelfConf
     protected void renderBg(GuiGraphics graphics, float partialTick, int mouseX, int mouseY) {
         int x = this.leftPos;
         int y = this.topPos;
-        // Draw dark panel with subtle border
         graphics.fill(x, y, x + this.imageWidth, y + this.imageHeight, 0xE0181820);
         graphics.renderOutline(x, y, this.imageWidth, this.imageHeight, 0xFF5A5A72);
     }
