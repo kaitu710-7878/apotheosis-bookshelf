@@ -1,5 +1,13 @@
 # Changelog / 変更履歴
 
+## [1.0.4-beta] - 2026-11-18
+
+### English
+- Promoted to Beta release after in-game verification.
+
+### 日本語
+- 実機動作確認を経てベータ版（Beta）へ昇格。
+
 ## [1.0.3-alpha] - 2026-11-18
 
 ### English
