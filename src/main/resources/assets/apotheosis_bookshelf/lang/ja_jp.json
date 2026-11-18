@@ -1,0 +1,25 @@
+{
+  "itemGroup.apotheosis_bookshelf.main": "Apotheosis Bookshelf",
+
+  "block.apotheosis_bookshelf.eterna_bookshelf": "エテルナ本棚",
+  "block.apotheosis_bookshelf.quanta_bookshelf": "クアンタ本棚",
+  "block.apotheosis_bookshelf.arcana_bookshelf": "アルカナ本棚",
+  "block.apotheosis_bookshelf.treasure_bookshelf": "お宝本棚",
+  "block.apotheosis_bookshelf.anvil_bookshelf": "金床本棚",
+
+  "item.apotheosis_bookshelf.primal_end_crystal": "原初のエンドクリスタル",
+  "item.apotheosis_bookshelf.primal_nether_star": "原初のネザースター",
+
+  "stat.apotheosis_bookshelf.eterna": "エテルナ",
+  "stat.apotheosis_bookshelf.quanta": "クアンタ",
+  "stat.apotheosis_bookshelf.arcana": "アルカナ",
+
+  "tooltip.apotheosis_bookshelf.configurable_stat": "%s: %s (設定範囲: 1 〜 50)",
+  "tooltip.apotheosis_bookshelf.eterna_cap": "エテルナ上限: 50",
+  "tooltip.apotheosis_bookshelf.right_click_config": "設置後に右クリックで数値を設定",
+  "tooltip.apotheosis_bookshelf.treasure_shelf": "エンチャントテーブルでお宝エンチャントも付与可能にする",
+  "tooltip.apotheosis_bookshelf.anvil_shelf": "エンチャントテーブルで金床付与可能なエンチャントすべてを付与可能にする",
+  "tooltip.apotheosis_bookshelf.no_curses": "呪いエンチャントを無効化 (コンフィグで変更可)",
+  "tooltip.apotheosis_bookshelf.primal_end_crystal": "エンドクリスタルをエンダードラゴンに右クリックして入手",
+  "tooltip.apotheosis_bookshelf.primal_nether_star": "ネザースターをウィザーに右クリックして入手"
+}

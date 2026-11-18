@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "apotheosis_bookshelf:quanta_bookshelf"
+    }
+  ],
+  "result": {
+    "item": "apotheosis_bookshelf:arcana_bookshelf",
+    "count": 1
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "apotheosis_bookshelf:block/arcana_bookshelf_top",
+    "side": "apotheosis_bookshelf:block/arcana_bookshelf"
+  }
+}

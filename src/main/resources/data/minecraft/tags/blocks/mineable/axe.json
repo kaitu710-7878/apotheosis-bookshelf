@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "apotheosis_bookshelf:eterna_bookshelf",
+    "apotheosis_bookshelf:quanta_bookshelf",
+    "apotheosis_bookshelf:arcana_bookshelf",
+    "apotheosis_bookshelf:treasure_bookshelf"
+  ]
+}

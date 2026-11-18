@@ -1,0 +1,19 @@
+# Changelog / 変更履歴
+
+## [1.0.0-alpha] - 2026-11-18
+
+### English
+- Initial alpha release for Minecraft 1.20.1 (Forge).
+- Added Eterna, Quanta, and Arcana Bookshelves with right-click GUI to configure stat values (1-50).
+- Added Treasure Bookshelf and Anvil Bookshelf with configurable curse prevention.
+- Added Primal End Crystal (right-click Ender Dragon with End Crystal) and Primal Nether Star (right-click Wither with Nether Star).
+- Added crafting recipes including the 3-way bookshelf conversion loop and Library of Alexandria recipe.
+- Added bilingual (English / Japanese) localization and documentation.
+
+### 日本語
+- Minecraft 1.20.1 (Forge) 向け初期アルファ版をリリース。
+- 右クリックGUIで数値を1〜50に設定できるエテルナ本棚（上限50）、クアンタ本棚、アルカナ本棚を追加。
+- コンフィグで呪い無効を切り替え可能なお宝本棚、金床本棚を追加。
+- 原初のエンドクリスタル（エンドクリスタルをエンダードラゴンに右クリック）、原初のネザースター（ネザースターをウィザーに右クリック）を追加。
+- 3種本棚のループ変換レシピやアレクサンドリア書庫のレシピを含む各種クラフトレシピを追加。
+- 日英バイリンガル対応（ゲーム内テキストおよび各種ドキュメント）を実装。

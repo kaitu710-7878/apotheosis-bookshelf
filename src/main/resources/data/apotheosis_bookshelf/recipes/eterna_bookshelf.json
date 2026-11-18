@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    "MEM",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:bookshelf"
+    },
+    "M": {
+      "item": "apotheosis:mythic_material"
+    },
+    "E": {
+      "item": "minecraft:experience_bottle"
+    }
+  },
+  "result": {
+    "item": "apotheosis_bookshelf:eterna_bookshelf",
+    "count": 1
+  }
+}

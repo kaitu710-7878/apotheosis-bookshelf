@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "apotheosis_bookshelf:quanta_bookshelf"
+    },
+    {
+      "item": "apotheosis_bookshelf:primal_nether_star"
+    }
+  ],
+  "result": {
+    "item": "apotheosis_bookshelf:treasure_bookshelf",
+    "count": 1
+  }
+}

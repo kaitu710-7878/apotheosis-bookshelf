@@ -1,0 +1,25 @@
+{
+  "itemGroup.apotheosis_bookshelf.main": "Apotheosis Bookshelf",
+
+  "block.apotheosis_bookshelf.eterna_bookshelf": "Eterna Bookshelf",
+  "block.apotheosis_bookshelf.quanta_bookshelf": "Quanta Bookshelf",
+  "block.apotheosis_bookshelf.arcana_bookshelf": "Arcana Bookshelf",
+  "block.apotheosis_bookshelf.treasure_bookshelf": "Treasure Bookshelf",
+  "block.apotheosis_bookshelf.anvil_bookshelf": "Anvil Bookshelf",
+
+  "item.apotheosis_bookshelf.primal_end_crystal": "Primal End Crystal",
+  "item.apotheosis_bookshelf.primal_nether_star": "Primal Nether Star",
+
+  "stat.apotheosis_bookshelf.eterna": "Eterna",
+  "stat.apotheosis_bookshelf.quanta": "Quanta",
+  "stat.apotheosis_bookshelf.arcana": "Arcana",
+
+  "tooltip.apotheosis_bookshelf.configurable_stat": "%s: %s (Range: 1 - 50)",
+  "tooltip.apotheosis_bookshelf.eterna_cap": "Max Eterna Cap: 50",
+  "tooltip.apotheosis_bookshelf.right_click_config": "Right-click block to configure value",
+  "tooltip.apotheosis_bookshelf.treasure_shelf": "Allows treasure enchantments on the Enchanting Table",
+  "tooltip.apotheosis_bookshelf.anvil_shelf": "Allows all anvil-applicable enchantments on the Enchanting Table",
+  "tooltip.apotheosis_bookshelf.no_curses": "Blocks curse enchantments (configurable)",
+  "tooltip.apotheosis_bookshelf.primal_end_crystal": "Obtained by right-clicking the Ender Dragon with an End Crystal",
+  "tooltip.apotheosis_bookshelf.primal_nether_star": "Obtained by right-clicking the Wither with a Nether Star"
+}

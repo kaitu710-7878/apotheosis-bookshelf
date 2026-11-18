@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:ender_chest"
+    },
+    {
+      "item": "apotheosis_bookshelf:eterna_bookshelf"
+    },
+    {
+      "item": "apotheosis_bookshelf:quanta_bookshelf"
+    },
+    {
+      "item": "apotheosis_bookshelf:arcana_bookshelf"
+    }
+  ],
+  "result": {
+    "item": "apotheosis:ender_library",
+    "count": 1
+  }
+}
