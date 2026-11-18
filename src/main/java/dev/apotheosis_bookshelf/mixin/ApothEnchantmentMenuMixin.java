@@ -19,7 +19,7 @@ import java.util.List;
 @Mixin(value = ApothEnchantmentMenu.class, remap = false)
 public abstract class ApothEnchantmentMenuMixin {
 
-    @Inject(method = "getEnchantmentList", at = @At("HEAD"))
+    @Inject(method = {"getEnchantmentList", "m_39471_"}, at = @At("HEAD"))
     private void apotheosis_bookshelf$beforeGetEnchantmentList(
             ItemStack stack, int enchantSlot, int level, CallbackInfoReturnable<List<EnchantmentInstance>> cir) {
         boolean hasAnvilShelf = ((EnchantmentMenuAccessor) this).getAccess().evaluate((lvl, tablePos) -> {
@@ -36,7 +36,7 @@ public abstract class ApothEnchantmentMenuMixin {
         AnvilEnchantingContext.ANVIL_MODE.set(hasAnvilShelf);
     }
 
-    @Inject(method = "getEnchantmentList", at = @At("RETURN"))
+    @Inject(method = {"getEnchantmentList", "m_39471_"}, at = @At("RETURN"))
     private void apotheosis_bookshelf$afterGetEnchantmentList(
             ItemStack stack, int enchantSlot, int level, CallbackInfoReturnable<List<EnchantmentInstance>> cir) {
         AnvilEnchantingContext.ANVIL_MODE.remove();

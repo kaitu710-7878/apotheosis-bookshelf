@@ -1,5 +1,13 @@
 # Changelog / 変更履歴
 
+## [1.0.1-alpha] - 2026-11-18
+
+### English
+- Fixed `ApothEnchantmentMenuMixin` failing to apply in production (SRG-obfuscated) environments by targeting both `getEnchantmentList` and `m_39471_`.
+
+### 日本語
+- 本番（SRG難読化）環境で `ApothEnchantmentMenuMixin` の適用に失敗する不具合を修正（`getEnchantmentList` と `m_39471_` の両方をターゲットに追加）。
+
 ## [1.0.0-alpha] - 2026-11-18
 
 ### English
